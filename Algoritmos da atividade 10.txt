@@ -1,0 +1,82 @@
+	Algoritmo que converte real para dolar e euro
+programa {
+	funcao inicio() {
+		inteiro valor_real
+		real valor_dolar
+		real valor_euro
+		    escreva("Digite o valor do produto: ")
+		        leia(valor_real)
+		
+	        valor_dolar = valor_real/4.62
+		    valor_euro = valor_real/5.07
+		        escreva("O valor do produto em real é ",valor_real, " ,e o valor deste produto em dolares é ",valor_dolar," ,e o valor deste produto em euros é ",valor_euro)
+		
+	}
+}
+
+_____________________________________________________________________________________________________________________________________________________________________________________
+
+	Algoritmo que calcula o salario de um vendedor comissionado
+programa {
+	funcao inicio() {
+        const real cliente_especial = 0.1,funcionario=0.05
+		real valor_inicial,desconto
+		real valor_final
+		inteiro codigo
+		    escreva("Digite o valor do produto: ")
+		        leia(valor_inicial)
+		    escreva("Digite o seu codigo: ")
+		        leia(codigo)
+	se(codigo == 1){
+        desconto=valor_inicial*cliente_especial
+	    valor_final = valor_inicial - desconto
+	    escreva("O valor do produto é ",valor_final)
+	}
+	senao se(codigo == 2){
+        desconto = valor_inicial*funcionario
+	    valor_final = valor_inicial - desconto
+	    escreva("O valor do produto é ",valor_final)
+	}
+	senao se(codigo == 0){
+	    valor_final = valor_inicial
+	    escreva("O valor do produto é ",valor_final)
+	}
+	}
+}
+
+
+_______________________________________________________________________________________________________________________________________________________________________________________
+
+	Algoritmo que calcula o preço final de um produto
+programa
+{
+	
+	funcao inicio()
+	{
+		real preco_fabrica
+		real preco_total
+			escreva("Digite o preço de frábrica do produto desejado: ")
+				leia(preco_fabrica)
+			preco_total = (preco_fabrica +0.25+0.28)
+				escreva("O preço final do produto é: ",preco_total)
+	}
+}
+
+_______________________________________________________________________________________________________________________________________________________________________________________
+
+	Algoritmo que ler 5 valores e dar a media desses valores
+programa {
+  funcao inicio() {
+    inteiro valor, media, somaValor = 0
+    inteiro repeticao
+        para(repeticao = 1;repeticao <=5; repeticao = repeticao + 1){
+            escreva("Digite um valor: ")
+            leia(valor)
+            somaValor = somaValor + valor
+            }
+            media = somaValor / 5
+            escreva("A media dos valores informados é ",media)
+    
+  }
+}
+	

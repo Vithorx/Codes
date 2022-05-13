@@ -1,0 +1,123 @@
+ Questao 01:
+programa
+{
+	
+	funcao inicio()
+	{
+		real valor 
+		real conversao
+			escreva("Digite o valor em polegadas desejado para conversão: ")
+				leia(valor)
+		 conversao = valor*0.0254
+		 escreva("O resultado da conversão é ",conversao,"m")
+	}
+}
+_______________________________________________________________________________________________________________________________________
+ Questao 02:
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro valor
+			escreva("Digite um valor: ")
+				leia(valor)
+		se(valor>=10 e valor<=50){
+			escreva("Este valor é verdadeiro")
+		}
+		senao{
+			escreva("Este valor é falso")
+		}
+	}
+}
+
+ Questao 03:
+programa
+{
+	
+	funcao inicio()
+	{
+		real preco_inicial
+		real preco_total
+			escreva("Digite o preço o preço de custo do produto: ")
+				leia(preco_inicial)
+			preco_total = preco_inicial + 0.28 + 0.25 * preco_inicial
+				escreva("O preço final do produto é R$......:2",preco_total)
+		
+			
+			
+}
+}
+_______________________________________________________________________________________________________________________________________
+ Questao 04:
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro unid
+		real preco_inicial
+		real preco_final
+		real desconto
+			escreva("Digite o valor unitário do produto desejado: ")
+				leia(preco_inicial)
+			escreva("Digite a quantidade de unidades: ")
+				leia(unid)
+				limpa()
+		
+		se(unid>=1 e unid<=10){
+			preco_final = preco_inicial
+			escreva("O valor total a ser pago é R$.......",preco_final,"\nValor do desconto R$.....:n/a")
+		}
+		senao se(unid>=11 e unid<=20){
+			preco_final = (preco_inicial-(preco_inicial*10/100))
+			desconto = preco_inicial*10/100
+			escreva("O valor total a ser pago é R$.........:",preco_final,"\nValor do desconto R$.......: ",desconto)
+		}
+		senao se(unid>=21 e unid<=50){
+			preco_final =(preco_inicial-(preco_inicial*20/100))
+			desconto = preco_inicial*20/100
+			escreva("O valor total a ser pago é R$.......:",preco_final,"\nValor do desconto R$.......:",desconto)
+		}
+		senao se(unid<50){
+			preco_final = (preco_inicial-(preco_inicial*30/100))
+			desconto = preco_inicial*30/100
+			escreva("O valor total a ser pago é R$.........:",preco_final,"\nValor do desconto R$........:",desconto)
+		}
+		
+	}
+}
+_______________________________________________________________________________________________________________________________________
+ Questao 05:
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro codigo
+		inteiro pedido
+		inteiro qtd_vendas
+		real total_vendas
+		real valor_vendas
+		real comissao
+			escreva("Digite o pedido......:")
+				leia(pedido)			
+			escreva("Digite o seu codigo.....: ")
+				leia(codigo) 
+			escreva("Digite o valor total de vendas feitas R$.......: ")
+				leia(total_vendas)
+			escreva("Digite a quantidade de vendas.......: ")
+				leia(qtd_vendas)
+			escreva("Digite o valor da venda R$.......: ")
+				leia(valor_vendas)
+			limpa()
+		se(codigo == 1){
+			comissao = (total_vendas*5/100)
+			escreva("O valor da comissão é R$: ",comissao,"\nO total de vendas é: ",total_vendas,"\nA quantidade de comissões é: ",qtd_vendas)
+		}
+		senao se(codigo == 2){
+			comissao =(total_vendas*5/100)
+			escreva("O valor da comissão é R$: ",comissao,"\nO total de vendas é: ",total_vendas,"\nA quantidade de comissões é: ",qtd_vendas)
+		}
+	}
+}
